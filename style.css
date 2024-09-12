@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #333;
+}
+
+header {
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #ffeb3b;
+}
+
+#home {
+    background-image: url('images/background.jpg');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 30px 0;
+    color: #ff7e5f;
+}
+
+p {
+    font-size: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    color: #fff;
+}
+
+#beach, #temple, #japan {
+    padding: 50px;
+    background: #444;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    transition: transform 0.3s;
+}
+
+#beach:hover, #temple:hover, #japan:hover {
+    transform: scale(1.05);
+}
+
+.destination img {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destination img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#about {
+    padding: 50px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#about .company-info img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#about .company-info img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input, textarea {
+    width: 300px;
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    background: #444;
+    color: #fff;
+}
+
+button {
+    background: #ff7e5f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #feb47b;
+}
+
+#contact {
+    padding: 50px;
+    background: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+}
+
+.contact-details p {
+    margin: 10px 0;
+    color: #ffeb3b;
+}
+
+footer {
+    background: #222;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
